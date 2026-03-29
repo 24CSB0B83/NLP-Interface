@@ -1,0 +1,202 @@
+[
+  {
+    "error_message": "SyntaxError: invalid syntax",
+    "code_snippet": "if x == 5 print(x)",
+    "explanation": "The if statement is missing a colon ':'. Add ':' after the condition."
+  },
+  {
+    "error_message": "IndentationError: expected an indented block",
+    "code_snippet": "if x > 0:\nprint(x)",
+    "explanation": "Python requires indentation after an if statement. Indent the print statement."
+  },
+  {
+    "error_message": "NameError: name 'x' is not defined",
+    "code_snippet": "print(x)",
+    "explanation": "The variable 'x' is used before it is defined. Define it first."
+  },
+  {
+    "error_message": "TypeError: unsupported operand type(s) for +",
+    "code_snippet": "x = 5 + 'hello'",
+    "explanation": "You cannot add a number and a string. Convert one type before adding."
+  },
+  {
+    "error_message": "TypeError: 'int' object is not callable",
+    "code_snippet": "x = 5\nx()",
+    "explanation": "You are trying to call a number like a function. Remove the parentheses."
+  },
+  {
+    "error_message": "ZeroDivisionError: division by zero",
+    "code_snippet": "x = 10 / 0",
+    "explanation": "Division by zero is not allowed. Check the divisor value."
+  },
+  {
+    "error_message": "IndexError: list index out of range",
+    "code_snippet": "arr = [1,2,3]\nprint(arr[5])",
+    "explanation": "You are accessing an index that does not exist in the list."
+  },
+  {
+    "error_message": "KeyError",
+    "code_snippet": "d = {'a':1}\nprint(d['b'])",
+    "explanation": "The key 'b' does not exist in the dictionary."
+  },
+  {
+    "error_message": "AttributeError: 'int' object has no attribute 'append'",
+    "code_snippet": "x = 5\nx.append(10)",
+    "explanation": "append() is a list method, not available for integers."
+  },
+  {
+    "error_message": "TypeError: missing required positional argument",
+    "code_snippet": "def add(a, b): return a+b\nadd(5)",
+    "explanation": "The function requires two arguments, but only one was provided."
+  },
+  {
+    "error_message": "SyntaxError: unexpected EOF while parsing",
+    "code_snippet": "if x > 5:\n    print(x",
+    "explanation": "A closing parenthesis ')' is missing."
+  },
+  {
+    "error_message": "ValueError: invalid literal for int()",
+    "code_snippet": "x = int('abc')",
+    "explanation": "You cannot convert non-numeric text into an integer."
+  },
+  {
+    "error_message": "UnboundLocalError: local variable referenced before assignment",
+    "code_snippet": "def foo():\n    print(x)\n    x = 5",
+    "explanation": "The variable is used before being assigned inside the function."
+  },
+  {
+    "error_message": "TypeError: object of type 'int' has no len()",
+    "code_snippet": "x = 10\nlen(x)",
+    "explanation": "len() works on sequences like lists or strings, not integers."
+  },
+  {
+    "error_message": "ModuleNotFoundError: No module named 'mathh'",
+    "code_snippet": "import mathh",
+    "explanation": "The module name is incorrect. Use 'math' instead of 'mathh'."
+  },
+  {
+    "error_message": "NameError: name 'sqrt' is not defined",
+    "code_snippet": "x = sqrt(16)",
+    "explanation": "You forgot to import sqrt from the math module."
+  },
+  {
+    "error_message": "TypeError: can only concatenate str (not \"int\") to str",
+    "code_snippet": "x = 'age: ' + 20",
+    "explanation": "Convert the integer to a string before concatenation."
+  },
+  {
+    "error_message": "SyntaxError: invalid indentation",
+    "code_snippet": "def foo():\nprint('hi')",
+    "explanation": "The function body must be indented."
+  },
+  {
+    "error_message": "RecursionError: maximum recursion depth exceeded",
+    "code_snippet": "def foo(): foo()\nfoo()",
+    "explanation": "The function calls itself without a stopping condition."
+  },
+  {
+    "error_message": "TypeError: 'NoneType' object is not subscriptable",
+    "code_snippet": "x = None\nx[0]",
+    "explanation": "You are trying to index a variable that has value None."
+  },
+  {
+    "error_message": "NameError: name 'x' is not defined",
+    "code_snippet": "print(x)",
+    "explanation": "You are trying to use variable 'x' before defining it. Define 'x' first."
+  },
+  {
+    "error_message": "IndentationError: expected an indented block",
+    "code_snippet": "if x > 5:\nprint(x)",
+    "explanation": "Python uses indentation to define blocks. Indent the print statement under the if."
+  },
+  {
+    "error_message": "SyntaxError: invalid syntax",
+    "code_snippet": "if x == 5 print(x)",
+    "explanation": "The if statement is missing a colon ':'. Add ':' after the condition."
+  },
+  {
+    "error_message": "TypeError: unsupported operand type(s) for +",
+    "code_snippet": "x = 5 + 'hello'",
+    "explanation": "You cannot add a number and a string. Convert one type before adding."
+  },
+  {
+    "error_message": "ZeroDivisionError: division by zero",
+    "code_snippet": "x = 10 / 0",
+    "explanation": "Division by zero is not allowed. Check the divisor before dividing."
+  },
+  {
+    "error_message": "IndexError: list index out of range",
+    "code_snippet": "arr = [1,2,3]\nprint(arr[5])",
+    "explanation": "You are accessing an index that does not exist in the list."
+  },
+  {
+    "error_message": "KeyError",
+    "code_snippet": "d = {'a':1}\nprint(d['b'])",
+    "explanation": "The key 'b' does not exist in the dictionary. Check available keys."
+  },
+  {
+    "error_message": "AttributeError: 'int' object has no attribute",
+    "code_snippet": "x = 5\nx.append(10)",
+    "explanation": "append() is a list method. Integers do not support this operation."
+  },
+  {
+    "error_message": "TypeError: 'int' object is not iterable",
+    "code_snippet": "for i in 5:\n    print(i)",
+    "explanation": "You are trying to iterate over an integer. Use a list or range instead."
+  },
+  {
+    "error_message": "ValueError: invalid literal for int()",
+    "code_snippet": "x = int('abc')",
+    "explanation": "The string 'abc' cannot be converted into an integer."
+  },
+  {
+    "error_message": "UnboundLocalError: local variable referenced before assignment",
+    "code_snippet": "def foo():\n    print(x)\n    x = 5",
+    "explanation": "The variable 'x' is used before it is assigned inside the function."
+  },
+  {
+    "error_message": "ModuleNotFoundError: No module named 'maths'",
+    "code_snippet": "import maths",
+    "explanation": "The module name is incorrect or not installed. Check spelling or installation."
+  },
+  {
+    "error_message": "TypeError: missing required positional argument",
+    "code_snippet": "def add(a, b):\n    return a+b\nadd(5)",
+    "explanation": "The function requires two arguments, but only one was provided."
+  },
+  {
+    "error_message": "SyntaxError: unexpected EOF while parsing",
+    "code_snippet": "if x > 5:\n    print(x",
+    "explanation": "A closing parenthesis or bracket is missing."
+  },
+  {
+    "error_message": "TypeError: 'NoneType' object is not callable",
+    "code_snippet": "x = None\nx()",
+    "explanation": "You are trying to call None as a function, which is not allowed."
+  },
+  {
+    "error_message": "AssertionError",
+    "code_snippet": "assert x > 10",
+    "explanation": "The assertion condition evaluated to False. Check the condition logic."
+  },
+  {
+    "error_message": "RecursionError: maximum recursion depth exceeded",
+    "code_snippet": "def f():\n    f()\nf()",
+    "explanation": "The function keeps calling itself without a base condition."
+  },
+  {
+    "error_message": "TypeError: list indices must be integers or slices",
+    "code_snippet": "arr = [1,2,3]\nprint(arr['1'])",
+    "explanation": "List indices must be integers, not strings."
+  },
+  {
+    "error_message": "RuntimeError: dictionary changed size during iteration",
+    "code_snippet": "d = {'a':1}\nfor k in d:\n    d['b'] = 2",
+    "explanation": "You cannot modify a dictionary while iterating over it."
+  },
+  {
+    "error_message": "SyntaxError: cannot assign to literal",
+    "code_snippet": "5 = x",
+    "explanation": "You cannot assign a value to a literal. Assignment must be to a variable."
+  }
+]
