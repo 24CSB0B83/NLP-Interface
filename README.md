@@ -61,6 +61,7 @@ Instead of writing analysis scripts yourself, you type queries like `"find unuse
 - Python 3.8+
 - [Streamlit](https://streamlit.io/) — web UI
 - `ast` — Python's built-in Abstract Syntax Tree module
+- graphviz — visual Control Flow Graph rendering
 - JSON — error explanation dataset (`dataset.json`)
 
 5. Project Structure
@@ -90,13 +91,14 @@ nlp-interface/
 
 - Python 3.8 or higher
 - pip
+- Graphviz (system install — see Installation)
 
 8. Installation
 
 1. Clone the repository
 
-git clone https://github.com/your-username/nlp-interface.git
-cd nlp-interface
+git clone https://github.com/LavanyaVarthyavath/NLP-Interface.git
+cd NLP-Interface
 
 2. (Optional but recommended) Create a virtual environment
 
@@ -106,19 +108,24 @@ venv\Scripts\activate           # Windows
 
 3. Install dependencies
 
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
+# Windows: download from https://graphviz.org/download/ and add to PATH
+# Linux:
+sudo apt install graphviz
+# macOS:
+brew install graphviz
 Or manually:
 pip install streamlit
 
 4. Run the app
-streamlit run app.py
+python -m streamlit run app.py
 
 5. Open in your browser
 
 http://localhost:8501
 
-9. Usage
+9.. Usage
 
 1. Paste any valid Python code into the **left panel**
 2. Type a natural language query into the **right panel**
@@ -202,8 +209,8 @@ To trigger it, type any of: `"evaluate model"`, `"check accuracy"`, `"run evalua
 
 Lavanya Varthyavath
 
-- GitHub: [@your-username](https://github.com/varthyavath Lavanya)
-- Email:vl24csb0b83@gmail.com
+- GitHub: @LavanyaVarthyavath
+- Email: vl24csb0b83@gmail.com
 
 16. License
 
